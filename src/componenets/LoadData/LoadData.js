@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import AddNameOnList from '../DisplayData/AddNameOnList/AddNameOnList';
 import DisplayData from '../DisplayData/DisplayData';
+import { addToLocalStorage } from '../DisplayData/LocalStorage/LocalStorage';
 import SelectedItemTable from '../SelectedItemTable/SelectedItemTable';
 import './LoadData.css'
 const LoadData = () => {
@@ -15,6 +15,7 @@ const LoadData = () => {
     const handleAddToList = (university) =>{
         const newCart = [...cart,university]
         setCart(newCart)
+        addToLocalStorage(university.name)
     };
     return (
         <div>

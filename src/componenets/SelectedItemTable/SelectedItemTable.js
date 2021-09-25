@@ -1,7 +1,6 @@
 import React from 'react';
 
 const SelectedItemTable = (props) => {
-    console.log(props.cart);
     const totalInternationalStudents = props.cart.reduce((previous,current)=>{
         return previous+current.internationalStudent;
     },0);
