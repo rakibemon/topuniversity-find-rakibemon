@@ -1,0 +1,23 @@
+.single-university{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s linear;
+}
+.single-university:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+figure{
+    overflow: hidden;
+}
+.img{
+    height: 250px;
+    width: 400px;
+    transition: transform 0.3s ease-in-out;margin-top: 0px;
+    margin-top: 10px;
+}
+.img:hover{
+    transform: scale(1.02);
+}

@@ -1,0 +1,23 @@
+.header{
+    height: 80px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.header img{
+    width: 60px;
+}
+.nav{
+    width: 250%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav li a{
+    color: #fff;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}

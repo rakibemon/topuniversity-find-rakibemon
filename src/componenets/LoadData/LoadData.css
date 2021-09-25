@@ -1,0 +1,14 @@
+.universities-container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 16px;
+    margin: 16px;
+}
+.university-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+}
+.cart-container{
+    margin-top: calc(100vh/4);
+}
