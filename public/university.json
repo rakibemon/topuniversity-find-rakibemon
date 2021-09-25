@@ -1,0 +1,137 @@
+[
+    {
+      "name": "National University of Singapore (NUS)",
+      "img": "https://media-exp1.licdn.com/dms/image/C4D0BAQGvBq9cz6AIIQ/company-logo_200_200/0/1519856127538?e=2159024400&v=beta&t=KOIN09dLCdtzbB_JGp0RqaG48_Cx5qlzzmw2Pi3t8Yg",
+      "researchOutput": "Very High",
+      "qsRanking": 11,
+      "internationalStudent": 7551,
+      "location": "Singapore",
+      "isPublic": true
+    },
+    {
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "img": "https://ischoolconnect.com/blog/wp-content/uploads/2018/12/31131766_205810363346714_1550189117445242880_n-1.jpg",
+      "researchOutput": "Very High",
+      "qsRanking": 1,
+      "internationalStudent": 3730,
+      "location": "United States",
+      "isPublic": false
+    },
+    {
+      "name": "The University of Queensland",
+      "img": "https://webunwto.s3.eu-west-1.amazonaws.com/styles/article_main_image/s3/2019-08/Queensland-university.jpg?itok=zWB0w9x0",
+      "researchOutput": "Very High",
+      "qsRanking": 47,
+      "internationalStudent": 22241,
+      "location": "Australia",
+      "isPublic": true
+    },
+    {
+      "name": "University of British Columbia",
+      "img": "https://worldscholarshipforum.com/wp-content/uploads/2020/02/university-of-british-columbia-ubc.jpeg",
+      "researchOutput": "Very High",
+      "qsRanking": 46,
+      "internationalStudent": 15399,
+      "location": "Canada",
+      "isPublic": true
+    },
+    {
+      "name": "Universidad de Alcalá",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ15EzTB244MpNi_cDUbXXcEuLOP95ByEya7Q&usqp=CAU",
+      "researchOutput": "High",
+      "qsRanking": 511,
+      "internationalStudent": 4560,
+      "location": "Spain",
+      "isPublic": true
+    },
+    {
+      "name": "Bangladesh University of Engineering and Technology",
+      "img": "https://www.daily-bangladesh.com/media/imgAll/2021March/en/daily-bangladesh-2105190435.jpg",
+      "researchOutput": "Very High",
+      "qsRanking": 801,
+      "internationalStudent": 11,
+      "location": "Bangladesh",
+      "isPublic": true
+    },
+    {
+      "name": "University of Dhaka",
+      "img": "https://media-eng.dhakatribune.com/uploads/2020/07/whatsapp-image-2020-07-01-at-8-07-49-pm-1593668734872.jpeg",
+      "researchOutput": "Medium",
+      "qsRanking": 802,
+      "internationalStudent": 48,
+      "location": "Bangladesh",
+      "isPublic": true
+    },
+    {
+      "name": "Al-Azhar University",
+      "img": "https://s3.eu-north-1.amazonaws.com/images.free-apply.com/uni/gallery/lg/1081800004/37baa583b7c267e98208d198e947c03bf2a7329d.jpg",
+      "researchOutput": "High",
+      "qsRanking": 1001,
+      "internationalStudent": 20664,
+      "location": "Egypt",
+      "isPublic": true
+    },
+    {
+      "name": "Universidad de Belgrano",
+      "img": "https://ceaweb.blob.core.windows.net/images/images/default-source/blog-image-library/0308161319-e1458247384810-640x640.jpg",
+      "researchOutput": "Medium",
+      "qsRanking": 465,
+      "internationalStudent": 758,
+      "location": "Argentina",
+      "isPublic": false
+    },
+    {
+      "name": "Universidad Austral",
+      "img": "https://www.arquitecturapanamericana.com/wp-content/uploads/2017/01/Foto-seleccionada.jpg",
+      "researchOutput": "High",
+      "qsRanking": 400,
+      "internationalStudent": 334,
+      "location": "Argentina",
+      "isPublic": false
+    },
+    {
+      "name": "University of Ottawa",
+      "img": "https://www.universitystudy.ca/wp-content/uploads/2013/06/ottawa-university-campus-image.jpg",
+      "researchOutput": "Very High",
+      "qsRanking": 230,
+      "internationalStudent": 8885,
+      "location": "Canada",
+      "isPublic": true
+    },
+    {
+      "name": "University of Oxford",
+      "img": "https://i2.wp.com/scholars4is.com/wp-content/uploads/2019/11/79.jpg?fit=1024%2C465&ssl=1",
+      "researchOutput": "Very High",
+      "qsRanking": 2,
+      "internationalStudent": 8442,
+      "location": "United Kingdom",
+      "isPublic": true
+    },
+    {
+      "name": "IE University",
+      "img": "https://img.emg-services.net/institutes/institute13774/ieu_institute_final.png",
+      "researchOutput": "High",
+      "qsRanking": 317,
+      "internationalStudent": 3917,
+      "location": "Spain",
+      "isPublic": false
+    },
+    {
+      "name": "Universidad de Montevideo (UM)",
+      "img": "https://www.qs-unisolution.com/wp-content/uploads/2019/10/Universidad-de-Montevideo-Uruguay-Estudio-de-Caso-Spanish.jpg",
+      "researchOutput": "Low",
+      "qsRanking": 469,
+      "internationalStudent": 76,
+      "location": "Uruguay",
+      "isPublic": false
+    },
+    {
+      "name": "Auezov South Kazakhstan University",
+      "img": "https://thumbs.dreamstime.com/b/shymkent-state-university-south-kazakhstan-auezov-view-statue-sultan-suleymenov-sunny-blue-sky-day-161887555.jpg",
+      "researchOutput": "Medium",
+      "qsRanking": 482,
+      "internationalStudent": 2220,
+      "location": " Kazakhstan",
+      "isPublic": true
+    }
+  ]
