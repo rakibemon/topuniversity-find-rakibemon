@@ -1,6 +1,9 @@
 import React from 'react';
 
+// which university you selected that will update in this section
 const SelectedItemTable = (props) => {
+
+    // make unique data to ensure you can't add samne varsity multiple time
     let uniqueUniversityNameList = [];
     let totalInternationalStudents = [];
     props.cart.map(university => {
@@ -20,9 +23,9 @@ const SelectedItemTable = (props) => {
                     <tr className='table-active'>
                         <td> Total Internatiaonal Students :
                             {
-                            totalInternationalStudents.reduce((previous,current)=>{
-                                return previous+current
-                            },0)
+                                totalInternationalStudents.reduce((previous, current) => {
+                                    return previous + current
+                                }, 0)
                             }
                         </td>
                     </tr>

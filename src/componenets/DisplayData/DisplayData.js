@@ -1,16 +1,16 @@
 import React from 'react';
 import './DisplayData.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus,faMinus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 // component to display data in UI
 const DisplayData = (props) => {
-    const {name,img,researchOutput,qsRanking,internationalStudent,location} = props.university;
-    
+    const { name, img, researchOutput, qsRanking, internationalStudent, location } = props.university;
+
     return (
         <div className='single-university'>
             <figure>
-                <img className='img img-thumbnail' src={img} alt={name + " Image"}/>
+                <img className='img img-thumbnail' src={img} alt={name + " Image"} />
             </figure>
             <h5 className='text-center'>{name}</h5>
             <h6>Research Output :{researchOutput}</h6>
@@ -18,8 +18,8 @@ const DisplayData = (props) => {
             <h6>International Student: {internationalStudent}</h6>
             <h6>Location : {location}</h6>
             <div className="flex">
-            <button onClick={()=> props.handleAddToList(props.university)} className="btn btn-info me-3 mb-3 px-4 py-2 text-white">Add to List <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
-            <button onClick={()=> props.handleRemoveFromList(props.university)} className="btn btn-info mb-3 px-4 py-2 text-white">Remove from Local Storage <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon></button>
+                <button onClick={() => props.handleAddToList(props.university)} className="btn btn-info me-3 mb-3 px-4 py-2 text-white">Add to List <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
+                <button onClick={() => props.handleRemoveFromList(props.university)} className="btn btn-info mb-3 px-4 py-2 text-white">Remove from Local Storage <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon></button>
             </div>
         </div>
     );

@@ -1,25 +1,31 @@
 let varsity_cart = {};
-const addToLocalStorage=(name)=>{
+
+// Add in local Storage
+const addToLocalStorage = (name) => {
     const exists = localStorage.getItem('varsity_cart');
-    if(!exists){
-        varsity_cart[name]=1
+    if (!exists) {
+        varsity_cart[name] = 1
     }
-    else{
+    else {
         varsity_cart = JSON.parse(exists)
         varsity_cart[name] = 1
     }
-    localStorage.setItem('varsity_cart',JSON.stringify(varsity_cart))
+    localStorage.setItem('varsity_cart', JSON.stringify(varsity_cart))
 };
-const getStoredCart = () =>{
+
+// retrive data from local Storage to send them UI component
+const getStoredCart = () => {
     const exists = localStorage.getItem('varsity_cart');
     return exists ? JSON.parse(exists) : {}
 };
-const removeFromLocalStorage=(name)=>{
+
+// remove from local Storage
+const removeFromLocalStorage = (name) => {
     const exists = localStorage.getItem('varsity_cart');
-    if(exists){
+    if (exists) {
         varsity_cart = JSON.parse(exists);
         delete varsity_cart[name]
     }
-    localStorage.setItem('varsity_cart',JSON.stringify(varsity_cart))
+    localStorage.setItem('varsity_cart', JSON.stringify(varsity_cart))
 };
-export {addToLocalStorage,getStoredCart,removeFromLocalStorage}
+export { addToLocalStorage, getStoredCart, removeFromLocalStorage }

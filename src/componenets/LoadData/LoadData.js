@@ -18,6 +18,8 @@ const LoadData = () => {
         }
         )
     },[]);
+
+    //retrive from Local Storage and show in UI 
     useEffect(()=>{
         const savedCart = getStoredCart ();
         const storedCart = []
@@ -29,15 +31,20 @@ const LoadData = () => {
         }
         setCart(storedCart)
     },[universities]);
+
     //click on addToList Button handler 
     const handleAddToList = (university) =>{
         const newCart = [...cart,university]
         setCart(newCart)
         addToLocalStorage(university.name)
     };
+
+    // remove from Local Storage but not from in UI You can make reload this page to see the change
     const handleRemoveFromList = (university) =>{
         removeFromLocalStorage(university.name)
     };
+
+    // Search by University name to get desire University info
     const handleSearch = (event) =>{
         const searchtext = event.target.value;
         const matchedUniversity = universities.filter(university => university.name.toLowerCase().includes(searchtext.toLowerCase()));
