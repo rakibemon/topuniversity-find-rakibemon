@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import DisplayData from '../DisplayData/DisplayData';
-import { addToLocalStorage } from '../DisplayData/SearchOption/LocalStorage';
+import { addToLocalStorage, getStoredCart, removeFromLocalStorage } from '../DisplayData/SearchOption/LocalStorage';
 import SelectedItemTable from '../SelectedItemTable/SelectedItemTable';
 import './LoadData.css'
 
@@ -16,12 +16,26 @@ const LoadData = () => {
         }
         )
     },[]);
+    useEffect(()=>{
+        const savedCart = getStoredCart ();
+        const storedCart = []
+        if(universities.length > 0){
+        for (const name in savedCart){
+            const addedUniversity = universities.find(university => university.name === name)
+            storedCart.push(addedUniversity)
+        }
+        }
+        setCart(storedCart)
+    },[universities]);
     //click on addToList Button handler 
     const handleAddToList = (university) =>{
         const newCart = [...cart,university]
         setCart(newCart)
         addToLocalStorage(university.name)
     };
+    const handleRemoveFromList = (university) =>{
+        removeFromLocalStorage(university.name)
+    }
     return (
         <div>
             <div className="universities-container">
@@ -32,6 +46,7 @@ const LoadData = () => {
                             return <DisplayData
                             key={qsRanking}
                             handleAddToList={handleAddToList}
+                            handleRemoveFromList={handleRemoveFromList}
                             university={university} ></DisplayData>
                         })
                     }
