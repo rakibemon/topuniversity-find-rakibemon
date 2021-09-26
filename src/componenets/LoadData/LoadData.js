@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import DisplayData from '../DisplayData/DisplayData';
-import { addToLocalStorage, getStoredCart, removeFromLocalStorage } from '../DisplayData/SearchOption/LocalStorage';
+import { addToLocalStorage, getStoredCart, removeFromLocalStorage } from '../LocalStorage/LocalStorage';
 import SelectedItemTable from '../SelectedItemTable/SelectedItemTable';
 import './LoadData.css'
 
@@ -8,11 +8,13 @@ import './LoadData.css'
 const LoadData = () => {
     const [universities,setUniversities] = useState([]);
     const [cart, setCart] = useState([]);
+    const [displayUniversities, setDisplayUniversities] = useState([]);
     useEffect(()=>{
         fetch('./university.json')
         .then(response => response.json())
         .then(data => {
             setUniversities(data)
+            setDisplayUniversities(data)
         }
         )
     },[]);
@@ -35,13 +37,24 @@ const LoadData = () => {
     };
     const handleRemoveFromList = (university) =>{
         removeFromLocalStorage(university.name)
-    }
+    };
+    const handleSearch = (event) =>{
+        const searchtext = event.target.value;
+        const matchedUniversity = universities.filter(university => university.name.toLowerCase().includes(searchtext.toLowerCase()));
+        setDisplayUniversities(matchedUniversity)
+     }
     return (
         <div>
+            <div className="search-container">
+                <input
+                onChange={handleSearch}
+                type="text"
+                placeholder='type here to search' />
+            </div>
             <div className="universities-container">
-                <div className='university-container'>
+                <div className='information-desk'>
                     {
-                        universities.map(university => {
+                        displayUniversities.map(university => {
                             const {qsRanking} = university
                             return <DisplayData
                             key={qsRanking}
@@ -51,7 +64,7 @@ const LoadData = () => {
                         })
                     }
                 </div>
-                <div className="cart-container">
+                <div className="selection-desk">
                     <SelectedItemTable cart={cart}></SelectedItemTable>
                 </div>
             </div>

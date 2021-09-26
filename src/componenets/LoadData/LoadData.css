@@ -1,14 +1,24 @@
+.search-container{
+    background-color:rgba(37, 36, 36, 0.883);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.search-container input{
+    width: 75%;
+}
 .universities-container{
     display: grid;
     grid-template-columns: 80% 20%;
     gap: 16px;
     margin: 16px;
 }
-.university-container{
+.information-desk{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 16px;
+    gap: 24px;
 }
-.cart-container{
+.selection-desk{
     margin-top: calc(100vh/4);
 }

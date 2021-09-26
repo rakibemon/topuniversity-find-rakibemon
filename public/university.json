@@ -1,5 +1,23 @@
 [
     {
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "img": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201706/%2520Aerial-AboveSummit-Christopher%2520Harting_0.png?itok=GcyfLJAb",
+      "researchOutput": "Very High",
+      "qsRanking": 1,
+      "internationalStudent": 3730,
+      "location": "United States",
+      "isPublic": false
+    },
+    {
+      "name": "University of Oxford",
+      "img": "https://i2.wp.com/scholars4is.com/wp-content/uploads/2019/11/79.jpg?fit=1024%2C465&ssl=1",
+      "researchOutput": "Very High",
+      "qsRanking": 2,
+      "internationalStudent": 8442,
+      "location": "United Kingdom",
+      "isPublic": true
+    },
+    {
       "name": "National University of Singapore (NUS)",
       "img": "https://i.ytimg.com/vi/uLa9oJ4vxp8/maxresdefault.jpg",
       "researchOutput": "Very High",
@@ -9,13 +27,13 @@
       "isPublic": true
     },
     {
-      "name": "Massachusetts Institute of Technology (MIT)",
-      "img": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201706/%2520Aerial-AboveSummit-Christopher%2520Harting_0.png?itok=GcyfLJAb",
+      "name": "University of British Columbia",
+      "img": "https://worldscholarshipforum.com/wp-content/uploads/2020/02/university-of-british-columbia-ubc.jpeg",
       "researchOutput": "Very High",
-      "qsRanking": 1,
-      "internationalStudent": 3730,
-      "location": "United States",
-      "isPublic": false
+      "qsRanking": 46,
+      "internationalStudent": 15399,
+      "location": "Canada",
+      "isPublic": true
     },
     {
       "name": "The University of Queensland",
@@ -27,12 +45,57 @@
       "isPublic": true
     },
     {
-      "name": "University of British Columbia",
-      "img": "https://worldscholarshipforum.com/wp-content/uploads/2020/02/university-of-british-columbia-ubc.jpeg",
+      "name": "University of Ottawa",
+      "img": "https://www.universitystudy.ca/wp-content/uploads/2013/06/ottawa-university-campus-image.jpg",
       "researchOutput": "Very High",
-      "qsRanking": 46,
-      "internationalStudent": 15399,
+      "qsRanking": 230,
+      "internationalStudent": 8885,
       "location": "Canada",
+      "isPublic": true
+    },
+    {
+      "name": "IE University",
+      "img": "https://img.emg-services.net/institutes/institute13774/ieu_institute_final.png",
+      "researchOutput": "High",
+      "qsRanking": 317,
+      "internationalStudent": 3917,
+      "location": "Spain",
+      "isPublic": false
+    },
+    {
+      "name": "Universidad Austral",
+      "img": "https://www.arquitecturapanamericana.com/wp-content/uploads/2017/01/Foto-seleccionada.jpg",
+      "researchOutput": "High",
+      "qsRanking": 400,
+      "internationalStudent": 334,
+      "location": "Argentina",
+      "isPublic": false
+    },
+    {
+      "name": "Universidad de Belgrano",
+      "img": "https://ceaweb.blob.core.windows.net/images/images/default-source/blog-image-library/0308161319-e1458247384810-640x640.jpg",
+      "researchOutput": "Medium",
+      "qsRanking": 465,
+      "internationalStudent": 758,
+      "location": "Argentina",
+      "isPublic": false
+    },
+    {
+      "name": "Universidad de Montevideo (UM)",
+      "img": "https://www.qs-unisolution.com/wp-content/uploads/2019/10/Universidad-de-Montevideo-Uruguay-Estudio-de-Caso-Spanish.jpg",
+      "researchOutput": "Low",
+      "qsRanking": 469,
+      "internationalStudent": 76,
+      "location": "Uruguay",
+      "isPublic": false
+    },
+    {
+      "name": "Auezov South Kazakhstan University",
+      "img": "https://thumbs.dreamstime.com/b/shymkent-state-university-south-kazakhstan-auezov-view-statue-sultan-suleymenov-sunny-blue-sky-day-161887555.jpg",
+      "researchOutput": "Medium",
+      "qsRanking": 482,
+      "internationalStudent": 2220,
+      "location": " Kazakhstan",
       "isPublic": true
     },
     {
@@ -69,69 +132,6 @@
       "qsRanking": 1001,
       "internationalStudent": 20664,
       "location": "Egypt",
-      "isPublic": true
-    },
-    {
-      "name": "Universidad de Belgrano",
-      "img": "https://ceaweb.blob.core.windows.net/images/images/default-source/blog-image-library/0308161319-e1458247384810-640x640.jpg",
-      "researchOutput": "Medium",
-      "qsRanking": 465,
-      "internationalStudent": 758,
-      "location": "Argentina",
-      "isPublic": false
-    },
-    {
-      "name": "Universidad Austral",
-      "img": "https://www.arquitecturapanamericana.com/wp-content/uploads/2017/01/Foto-seleccionada.jpg",
-      "researchOutput": "High",
-      "qsRanking": 400,
-      "internationalStudent": 334,
-      "location": "Argentina",
-      "isPublic": false
-    },
-    {
-      "name": "University of Ottawa",
-      "img": "https://www.universitystudy.ca/wp-content/uploads/2013/06/ottawa-university-campus-image.jpg",
-      "researchOutput": "Very High",
-      "qsRanking": 230,
-      "internationalStudent": 8885,
-      "location": "Canada",
-      "isPublic": true
-    },
-    {
-      "name": "University of Oxford",
-      "img": "https://i2.wp.com/scholars4is.com/wp-content/uploads/2019/11/79.jpg?fit=1024%2C465&ssl=1",
-      "researchOutput": "Very High",
-      "qsRanking": 2,
-      "internationalStudent": 8442,
-      "location": "United Kingdom",
-      "isPublic": true
-    },
-    {
-      "name": "IE University",
-      "img": "https://img.emg-services.net/institutes/institute13774/ieu_institute_final.png",
-      "researchOutput": "High",
-      "qsRanking": 317,
-      "internationalStudent": 3917,
-      "location": "Spain",
-      "isPublic": false
-    },
-    {
-      "name": "Universidad de Montevideo (UM)",
-      "img": "https://www.qs-unisolution.com/wp-content/uploads/2019/10/Universidad-de-Montevideo-Uruguay-Estudio-de-Caso-Spanish.jpg",
-      "researchOutput": "Low",
-      "qsRanking": 469,
-      "internationalStudent": 76,
-      "location": "Uruguay",
-      "isPublic": false
-    },
-    {
-      "name": "Auezov South Kazakhstan University",
-      "img": "https://thumbs.dreamstime.com/b/shymkent-state-university-south-kazakhstan-auezov-view-statue-sultan-suleymenov-sunny-blue-sky-day-161887555.jpg",
-      "researchOutput": "Medium",
-      "qsRanking": 482,
-      "internationalStudent": 2220,
-      "location": " Kazakhstan",
       "isPublic": true
     }
   ]

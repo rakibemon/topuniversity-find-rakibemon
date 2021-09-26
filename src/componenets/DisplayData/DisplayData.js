@@ -12,11 +12,11 @@ const DisplayData = (props) => {
             <figure>
                 <img className='img img-thumbnail' src={img} alt={name + " Image"}/>
             </figure>
-            <h5 className='text-center'>Name : {name}</h5>
+            <h5 className='text-center'>{name}</h5>
             <h6>Research Output :{researchOutput}</h6>
-            <p>QS Ranking : {qsRanking}</p>
-            <p>International Student: {internationalStudent}</p>
-            <p>Location : {location}</p>
+            <h6>QS Ranking : {qsRanking}</h6>
+            <h6>International Student: {internationalStudent}</h6>
+            <h6>Location : {location}</h6>
             <div className="flex">
             <button onClick={()=> props.handleAddToList(props.university)} className="btn btn-info me-3 mb-3 px-4 py-2 text-white">Add to List <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
             <button onClick={()=> props.handleRemoveFromList(props.university)} className="btn btn-info mb-3 px-4 py-2 text-white">Remove from Local Storage <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon></button>
