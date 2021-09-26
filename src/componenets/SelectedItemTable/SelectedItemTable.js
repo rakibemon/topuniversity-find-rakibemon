@@ -1,26 +1,39 @@
 import React from 'react';
 
 const SelectedItemTable = (props) => {
-    const totalInternationalStudents = props.cart.reduce((previous,current)=>{
-        return previous+current.internationalStudent;
-    },0);
+    let uniqueUniversityNameList = [];
+    let totalInternationalStudents = [];
+    props.cart.map(university => {
+        if (uniqueUniversityNameList.indexOf(university.name) === -1) {
+            uniqueUniversityNameList.push(university.name)
+            totalInternationalStudents.push(university.internationalStudent)
+        }
+        return uniqueUniversityNameList;
+    });
     return (
         <div>
             <table className="table table-dark table-striped">
                 <tbody>
                     <tr>
-                        <td> University Added : {props.cart.length}</td>
+                        <td> University Added : {uniqueUniversityNameList.length}</td>
                     </tr>
                     <tr className='table-active'>
-                        <td> Total Internatiaonal Students : {totalInternationalStudents} </td>
+                        <td> Total Internatiaonal Students :
+                            {
+                            totalInternationalStudents.reduce((previous,current)=>{
+                                return previous+current
+                            },0)
+                            }
+                        </td>
                     </tr>
                 </tbody>
             </table>
             <ul>
                 {
-                    props.cart.map(uni => <li key={uni.qsRanking}> {uni.name}</li>)
+                    uniqueUniversityNameList.map(universityName => <li key={universityName}> {universityName} </li>)
                 }
             </ul>
+
             <div className="text-center">
                 <button className="btn btn-success text-white">Confirmed</button>
             </div>

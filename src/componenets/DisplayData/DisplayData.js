@@ -2,6 +2,8 @@ import React from 'react';
 import './DisplayData.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
+// component to display data in UI
 const DisplayData = (props) => {
     const {name,img,researchOutput,qsRanking,internationalStudent,location} = props.university;
     

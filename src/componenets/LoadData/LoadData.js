@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import DisplayData from '../DisplayData/DisplayData';
-import { addToLocalStorage } from '../DisplayData/LocalStorage/LocalStorage';
+import { addToLocalStorage } from '../DisplayData/SearchOption/LocalStorage';
 import SelectedItemTable from '../SelectedItemTable/SelectedItemTable';
 import './LoadData.css'
+
+//Data loaded by fetch 
 const LoadData = () => {
     const [universities,setUniversities] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
     useEffect(()=>{
         fetch('./university.json')
         .then(response => response.json())
-        .then(data => setUniversities(data)
+        .then(data => {
+            setUniversities(data)
+        }
         )
-    },[])
+    },[]);
+    //click on addToList Button handler 
     const handleAddToList = (university) =>{
         const newCart = [...cart,university]
         setCart(newCart)
