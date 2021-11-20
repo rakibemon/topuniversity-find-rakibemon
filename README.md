@@ -1,4 +1,4 @@
-<h1> Discover top universities, new courses and the latest careers guidance.</h1>
+<h1> Discover top universities , new courses and the latest careers guidance.</h1>
 <p> Netlify Live site Link <a href="https://topuniversity-find-rakibemon.netlify.app/" target="_blank"> Click here </a></p>
 <ul>
     <li> In this website you can search your desire university </li>
